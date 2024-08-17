@@ -1,0 +1,135 @@
+.nav-bar {
+  background: rgba(8, 103, 186, 0.249);
+  width: 80px;
+  height: 100%;
+  top: 0;
+  position: absolute;
+  z-index: 3;
+  min-height: 500px;
+
+  .lo {
+    width: 40px;
+    margin-left: 20px;
+    margin-top: 15px;
+    height: 160px;
+  }
+
+  .logo {
+    display: block;
+    padding: 0.2px 0;
+
+    border-radius: 100%;
+
+    img {
+      display: block;
+      margin: 9px auto;
+      width: 44px;
+      margin-top: 12px;
+      //height: auto;
+
+      // &.sub-logo {
+      // width: 40px;
+      //}
+    }
+  }
+
+  nav {
+    display: block;
+    text-align: center;
+    position: absolute;
+    height: 210px;
+    top: 50%;
+    margin-top: -120px;
+    width: 100%;
+
+    a {
+      font-size: 22px;
+      //color: #4d4d4e;
+      color: #635d5d;
+      display: block;
+      line-height: 51px;
+      height: 51px;
+      position: relative;
+      text-decoration: none;
+
+      i {
+        transition: all 0.2s ease-out;
+      }
+
+      &:hover {
+        color: rgb(159, 185, 229);
+
+        svg {
+          opacity: 0;
+        }
+
+        &:after {
+          opacity: 1;
+        }
+      }
+
+      &:after {
+        content: '';
+        font-size: 10px;
+        letter-spacing: 2px;
+        position: absolute;
+        bottom: 8px;
+        display: block;
+        width: 100%;
+        text-align: center;
+        opacity: 0;
+        -webkit-transition: all 0.2s ease-out;
+        transition: all 0.2s ease-out;
+      }
+
+      &:first-child {
+        &::after {
+          content: 'HOME';
+        }
+      }
+    }
+    a.about-link {
+      &:after {
+        content: 'ABOUT';
+      }
+    }
+
+    a.contact-link {
+      &:after {
+        content: 'CONTACT';
+      }
+    }
+
+    a.active {
+      svg {
+        //color: rgb(194, 194, 130);
+        color: rgb(255, 250, 146);
+      }
+    }
+  }
+  ul {
+    position: absolute;
+    bottom: 1%;
+    width: 100%;
+    display: block;
+    padding: 0px;
+    list-style: none;
+    margin: 0px;
+    text-align: center;
+
+    li {
+      a {
+        padding: 7px 0;
+        display: block;
+        font-size: 15px;
+        color: rgb(255, 255, 19);
+        line-height: 16px;
+
+        &:hover svg {
+          //color: rgb(251, 255, 170);
+          color: rgb(240, 255, 70);
+        }
+      }
+    }
+  }
+}

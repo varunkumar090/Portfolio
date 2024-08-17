@@ -1,0 +1,182 @@
+.page {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.top-tags {
+  bottom: auto;
+  top: 60px;
+}
+
+.tags {
+  color: rgb(238, 255, 0);
+  opacity: 0.6;
+  position: absolute;
+  bottom: 10px;
+  left: 120px;
+  font-size: 18px;
+  font-family: 'La Belle Aurore';
+}
+
+.bottom-tag-html {
+  margin-left: -20px;
+  top: auto;
+}
+
+.container {
+  width: 70%;
+  will-change: contents;
+  min-height: 566px;
+  height: 50%;
+  position: absolute;
+  opacity: 0;
+  top: 10%;
+  margin: 0 auto;
+  z-index: 1;
+  transform-style: preserve-3d;
+  animation: fadeIn 1s forwards;
+  animation-delay: 1s;
+}
+
+//About page
+
+.about-page {
+  h1 {
+    font-size: 43px;
+    font-family: 'coolvertica';
+    color: yellow;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 25px;
+    left: 10px;
+    position: relative;
+
+    &::before {
+      content: '<h1>';
+      font-family: 'La Belle Aurore';
+      font-size: 18px;
+      margin-top: -10px;
+      position: absolute;
+      left: -10px;
+      opacity: 0.6;
+      line-height: 10px;
+    }
+    &::after {
+      content: '<h1/>';
+      font-family: 'La Belle Aurore';
+      font-size: 18px;
+      margin-left: 20px;
+      bottom: -20px;
+      position: absolute;
+      left: -30px;
+      opacity: 0.6;
+      line-height: 18px;
+    }
+  }
+
+  p {
+    font-size: 13px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 300;
+    min-width: fit-content;
+    animation: pulse 1s;
+    padding: 4px;
+
+    &:nth-of-type(1) {
+      animation-delay: 1.1s;
+    }
+    &:nth-of-type(2) {
+      animation-delay: 1.4s;
+    }
+    &:nth-of-type(3) {
+      animation-delay: 1.7s;
+    }
+  }
+
+  .text-zone {
+    position: absolute;
+    left: 15%;
+    top: 45%;
+    transform: translateY(-50%);
+    width: 33%;
+    vertical-align: middle;
+    display: table-cell;
+    max-height: 90%;
+  }
+  .text-animate-hover {
+    &:hover {
+      color: rgb(255, 255, 255);
+    }
+  }
+}
+
+//Contact  page
+.contact-page {
+  h1 {
+    font-size: 43px;
+    font-family: 'coolvertica';
+    color: rgb(255, 251, 0);
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 25px;
+    left: 10px;
+    position: relative;
+
+    &::before {
+      content: '<h1>';
+      font-family: 'La Belle Aurore';
+      font-size: 18px;
+      margin-top: -10px;
+      position: absolute;
+      left: -10px;
+      opacity: 0.6;
+      line-height: -30px;
+    }
+    &::after {
+      content: '<h1/>';
+      font-family: 'La Belle Aurore';
+      font-size: 18px;
+      margin-left: 20px;
+      bottom: -20px;
+      position: absolute;
+      left: -30px;
+      opacity: 0.6;
+      line-height: 18px;
+    }
+  }
+  p {
+    font-size: 13px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 300;
+    min-width: min-content;
+    animation: pulse 1s;
+    margin-bottom: -3%;
+    width: 130%;
+
+    &:nth-of-type(1) {
+      animation-delay: 1.1s;
+    }
+    &:nth-of-type(2) {
+      animation-delay: 1.4s;
+    }
+    &:nth-of-type(3) {
+      animation-delay: 1.7s;
+    }
+  }
+  .text-zone {
+    position: absolute;
+    left: 15%;
+    top: 45%;
+    transform: translateY(-50%);
+    width: 35%;
+    vertical-align: middle;
+  }
+  .text-animate-hover {
+    &:hover {
+      color: rgb(255, 255, 255);
+    }
+  }
+}

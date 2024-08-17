@@ -1,0 +1,114 @@
+.contact-form {
+  width: 100%;
+  margin-top: 20px;
+
+  ul {
+    padding: 0;
+    margin: 0;
+    li {
+      padding: 0;
+      margin: 0;
+      margin-bottom: 7px;
+      list-style: none;
+      overflow: hidden;
+      display: block;
+      position: static;
+      opacity: 0;
+      animation: fadeInUp 2s 2s;
+      animation-fill-mode: forwards;
+      clear: both;
+    }
+    li.half {
+      width: 46.5%;
+      margin-left: 2%;
+      float: left;
+      clear: none;
+
+      &:first-child {
+        margin-left: 0px;
+      }
+    }
+  }
+  input[type='text'],
+  input[type='email'] {
+    width: 90%;
+    height: 50%;
+    border: 0;
+    padding-left: 20px;
+    padding: 9px 10px;
+    font-size: 13px;
+    background: rgb(95, 95, 255);
+    color: white;
+    box-sizing: border-box;
+  }
+  textarea {
+    width: 90%;
+    height: 40px;
+    padding: 10px;
+    min-height: 130px;
+    border: 0;
+    background-color: rgb(95, 95, 255);
+    color: rgb(255, 254, 254);
+    font-size: 13px;
+    box-sizing: border-box;
+  }
+  .flat-button {
+    color: #ffd700;
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-decoration: none;
+    padding: 6px 11px;
+    float: right;
+    border: 1px solid #ffd700;
+    border-radius: 4px;
+    background: 0 0;
+    text-transform: uppercase;
+    margin-right: 29px;
+  }
+  .flat-button:hover {
+    background-color: #f3cf0067;
+    color: #ffffff;
+    border: 2px solid rgb(255, 255, 255);
+  }
+}
+
+.info-map {
+  position: absolute;
+  background-color: black;
+  top: 300px;
+  right: 43%;
+  z-index: 999999;
+  width: 210px;
+  padding: 20px;
+  padding-left: 10px;
+  color: #fef8f8;
+  font-family: Helvetica;
+  font-size: 14px;
+  font-weight: 600px;
+  opacity: 0;
+  animation: fadeIn 1s 1.5s;
+  animation-fill-mode: forwards;
+
+  span {
+    font-size: 16px;
+    display: block;
+    padding-top: 20px;
+    color: #ffd700;
+  }
+}
+
+.map-wrap {
+  background-color: rgb(12, 50, 2);
+  float: right;
+  margin-right: 1.5%;
+  width: 53%;
+  height: 97.5%;
+}
+.leaflet-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  opacity: 0;
+  animation: backInRight 1s 1.2s;
+  animation-fill-mode: forwards;
+}

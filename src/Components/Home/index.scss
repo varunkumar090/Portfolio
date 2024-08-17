@@ -1,0 +1,84 @@
+.home-page {
+  .text-zone {
+    margin-left: 60px;
+    left: 10%;
+    top: 40%;
+    position: absolute;
+    transform: translateY(-50%);
+    width: 100%;
+    max-height: max-content;
+  }
+
+  h1 {
+    font-size: 50px;
+    margin: 0;
+    line-height: 43px;
+    color: rgb(255, 255, 255);
+    font-family: 'Coolvetica';
+    font-weight: 10;
+
+    &::before {
+      content: '<h1>';
+      font-family: 'La Belle Aurore';
+      position: absolute;
+      margin-top: -50px;
+      color: yellow;
+      font-size: 18px;
+      left: 0%;
+      opacity: 0.6;
+    }
+
+    &::after {
+      content: '<h1/>';
+      font-family: 'La Belle Aurore';
+      color: yellow;
+      position: absolute;
+      font-size: 18px;
+      margin-top: 18px;
+      margin-left: 20px;
+      animation: fadeIn 1s 1.7s backwords;
+      opacity: 0.6;
+    }
+
+    img {
+      width: 39px;
+      margin-left: 20px;
+      margin-bottom: -10;
+      margin-right: -2;
+      opacity: 0;
+      //height: auto;
+      animation: rotateIn 1s linear both;
+      animation-duration: 2s;
+    }
+  }
+
+  h2 {
+    color: rgb(42, 170, 170);
+    margin-top: 20px;
+    letter-spacing: 1px;
+    animation: fadeIn 1s 1.9s backwards;
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  .flat-button {
+    color: #f1f90edd;
+    background-color: rgba(77, 77, 4, 0.486);
+    text-decoration: none;
+    padding: 10px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border: 1px solid;
+    margin-top: 15px;
+    letter-spacing: 1px;
+    float: left;
+    animation: fadeIn 1s 1.9s backwards;
+    white-space: nowrap;
+    //
+    box-shadow: 3px 3px 5px rgba(3, 5, 5, 0.724);
+
+    &:hover {
+      color: rgb(0, 191, 255);
+      background-color: rgba(7, 11, 96, 0.476);
+    }
+  }
+}

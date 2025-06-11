@@ -32,19 +32,15 @@ const About = () => {
             />
           </h1>
           <p>
-            I'm very ambiotious front-end developer looking for a role in
-            established IT company with the opportunity to work with the latest
-            technologies on challenging and diverse projects.
+             I’m Varun Kumar Parida, a self-taught Software Engineer with 2+ years of hands-on experience in Front-end Development (HTML, CSS, JavaScript) and frameworks like React.js and Node.js. Passionate about building scalable solutions, I’ve developed projects like a YouTube Clone with dynamic API integration and other web applications.
           </p>
           <p>
-            I'm quitly confident, naturally curious, and perpetually working on
-            improve my chops one design problem at a time.
+            Currently expanding my expertise in Backend Development (Next.js, Java) and strengthening my Problem-Solving skills (DSA). Though a high school graduate, I’ve leveraged online resources, workshops, and project-based learning to master modern tech stacks.
+
           </p>
           <p>
-            If I need to define my self in one sentence that would be a family
-            person, who really love's to take care of his own team as a family
-            member's, a person with full of sport or compitative sperit or
-            tech-obsessed!!!
+            Additionally, I’m skilled in AI tools and prompt engineering, optimizing workflows for efficiency. Eager to transition into a Software Developer role, I bring a strong foundation, adaptability, and a passion for turning ideas into functional code.
+
           </p>
         </div>
         <div class="spinner">
